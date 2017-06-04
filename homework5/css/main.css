@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #2B81AC;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+}
+
+.wrapper {
+    background: #3399CC;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width:60%;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header span, header i {
+    font-size: 27px;
+}
+
+main {
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*border-top: 4px solid white;*/
+    /*border-left: 4px solid white;*/
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+}
+
+ul li {
+    font-size: 20px;
+    display: inline-block;
+    width: 25%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+ul li:nth-child(1) {
+    width: 50%;
+    background: transparent;
+}
+
+ul li:nth-child(2) {
+    background: #33CCCC;
+}
+
+ul li:nth-child(3) {
+    background: #996699;
+}
+
+ul li:nth-child(4) {
+    background: #C24747;
+}
+
+ul li:nth-child(5) {
+    background: #E2674A;
+}
+
+ul li:nth-child(6) {
+    background: #FFCC66;
+}
+
+ul li:nth-child(7) {
+    background: #99CC99;
+}
+
+ul li:nth-child(8) {
+    background: #669999;
+}
+
+ul li:nth-child(9) {
+    background: #CC6699;
+    width: 50%;
+}
+
+ul li:nth-child(10) {
+    background: #339966;
+}
+
+ul li:nth-child(11) {
+    background: #666699;
+    width: 100%;
+}
+
+.temperature {
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.temperature i {
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.clear-span {
+    font-size: 0;
+}
+
+div.opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.5;
+    display: none;
+}
+
+ul:hover div.opacity{
+    display: block;
+}
+li:hover div.opacity{
+    display: none;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
