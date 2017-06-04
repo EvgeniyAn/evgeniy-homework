@@ -83,6 +83,7 @@ a{
     color: #c2c2c2;
     font-size: 12px;
     background-color: rgba(118,117,128,0.05);
+    font-weight: bold;
 }
 a:hover{
     color: #ec5a62;
