@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color: #B870DC;
+}
+
+main {
+    margin: 0 auto;
+    width: 1024px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    /*background-color: darkorchid;*/
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    /*list-style-type: none;*/
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul > li {
+    font-weight: normal;
+}
+
+.list-ability {
+    /*background-color: burlywood;*/
+    text-decoration: underline;
+    color: brown;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom:0;
+    /*text-decoration: underline;*/
+}
+
+p > span {
+    font-weight: normal;
+    padding: 5px;
+    text-decoration: underline;
+    /*background-color: burlywood;*/
+    margin: 5px;
+    display: inline-block;
+    color: brown;
+}
+
+.p-decoration {
+    text-decoration: underline;
+    color: brown;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+div.myfoto-container img {
+    width: 100px;
+    height: 100px;
+    /*margin-left: 100px;*/
+}
+
+.myfoto-lb {
+    display: inline;
+}
+
+div.myfoto-container .myfoto-lb {
+    vertical-align: top;
+}
+
+footer {
+    /*background-color: darkorchid;*/
+    margin: 0;
+    text-align: center;
+    padding: 10px 0 10px;
+}
+
+footer > ul {
+    margin: 0;
+}
+
+footer > ul > li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
