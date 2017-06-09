@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+body {
+    font-size: 18px;
+}
+
+main {
+    margin: 50px;
+    padding: 50px;
+    /*-webkit-box-shadow: 0px 0px 55px 4px rgba(0,0,0,0.42);*/
+    /*-moz-box-shadow: 0px 0px 55px 4px rgba(0,0,0,0.42);*/
+    /*box-shadow: 0px 0px 55px 4px rgba(0,0,0,0.42);*/
+    box-shadow: 0px 4px 68px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 68px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 68px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', "Times New Roman", serif;
+    font-weight: normal;
+    color: rgb(23, 23, 23);
+}
+
+p {
+    font-size: 12px;
+    font-family: 'Playfair Display', "Times New Roman", serif;
+    line-height: 1.8;
+    color: rgba(23, 23, 23, 0.702);
+    position: relative;
+}
+
+h2 + p:first-letter {
+    font-size: 61px;
+    padding: 5px 15px 10px 0px;
+    float: left;
+    line-height: 0.6;
+}
+
+main p:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.quote:after {
+    /*content: "\"";
+    font-size: 40px;
+    color: rgba(23, 23, 23, 0.702);*/
+    content: '\201d';
+    padding-left: 10px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.quote:before {
+    /*content: "\"";
+    font-size: 40px;
+    color: rgba(23, 23, 23, 0.702);*/
+    content: '\201c';
+    padding-right: 10px;
+    font-size: 40px;
+    line-height: 40px;
+}
+a {
+    display: inline-block;
+    vertical-align: baseline;
+    border: 2px solid rgb(234, 162, 88);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(234, 162, 88);
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(234, 162, 88);
+}
