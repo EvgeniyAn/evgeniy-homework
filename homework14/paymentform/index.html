@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="header-frm">
+            <div class="purchaser-info">
+                <span class="purchaser-info__name">Harold Finch</span>
+                <br>
+                <span class="purchaser-info__total">Your Total</span>
+            </div>
+            <div class="header-frm__price">$88</div>
+        </div>
+
+        <form class="main-frm" action="" method="get">
+            <label class="main-frm__lb" for="creditcard">Credit card number</label>
+            <input class="main-frm__input" type="number" id="creditcard" name="creditcard" required>
+
+            <label class="main-frm__lb" for="month">Expiration date</label>
+            <select class="select select--month" name="month" id="month">
+                <option class="select__item" value="none">Month</option>
+                <option class="select__item" value="January">January</option>
+                <option class="select__item" value="February">February</option>
+                <option class="select__item" value="March">March</option>
+                <option class="select__item" value="April">April</option>
+                <option class="select__item" value="May">May</option>
+                <option class="select__item" value="June">June</option>
+                <option class="select__item" value="July">July</option>
+                <option class="select__item" value="August">August</option>
+                <option class="select__item" value="September">September</option>
+                <option class="select__item" value="October">October</option>
+                <option class="select__item" value="November">November</option>
+                <option class="select__item" value="December">December</option>
+            </select>
+            <select class="select select--year" name="year" id="year">
+                <option class="select__item" value="none">Year</option>
+                <option class="select__item" value="2016">2016</option>
+                <option class="select__item" value="2017">2017</option>
+                <option class="select__item" value="2018">2018</option>
+                <option class="select__item" value="2019">2019</option>
+            </select>
+
+            <label class="main-frm__lb" for="cvv">CVV</label>
+            <input class="main-frm__input main-frm__input--cvv" type="number" name="cvv" id="cvv">
+            <span class="main-frm__inputDesc">3 or 4 digits - </span>
+            <a class="main-frm__example" href="#">view example</a>
+
+
+            <hr class="main-frm__lineDecoration">
+
+            <button class="main-frm__btnpay" name="pay">Pay</button>
+            <button class="main-frm__btncancel" name="cancel">Cancel order</button>
+
+        </form>
+    </main>
+</body>
+</html>
