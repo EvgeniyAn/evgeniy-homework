@@ -1,0 +1,135 @@
+.ba-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ba-container > .ba-grid {
+    margin-top: 20px;
+}
+
+.ba-grid > [class*="ba-width-"] {
+    float: left;
+}
+
+.ba-grid:after, .ba-grid:before {
+    content: '';
+    display: table;
+}
+
+.ba-grid:after {
+    clear: both;
+}
+
+.ba-grid {
+    clear: both;
+    *zoom: 1;
+
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+[class*="ba-width-"] {
+    width: 100%;
+
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*="ba-color"] {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    line-height: 150px;
+}
+
+.ba-width-1-2 {
+    width: 50%;
+    height: 150px;
+}
+
+.ba-color1 {
+    background: #AFDFBF;
+    color: #5C6062;
+}
+
+.ba-color2 {
+    background: #68C5B8;
+    color: #5C6062;
+}
+
+.ba-width-2-2 {
+    width: 50%;
+    height: 320px;
+}
+
+.ba-color3 {
+    background: #FA688A;
+    line-height: 300px;
+}
+
+.ba-width-2-3 {
+    width: 33.333%;
+    height: 165px;
+}
+
+.ba-color4 {
+    background: #8A95EF;
+}
+
+.ba-width-2-4 {
+    width: 50%;
+    height: 150px;
+
+    padding: 20px 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ba-color5 {
+    background: #FFC569;
+    line-height: 120px;
+    color: #5C6062;
+}
+
+.ba-width-3-3 {
+    width: 33.333%;
+    height: 190px;
+}
+
+.ba-color6 {
+    background: #588CC7;
+    line-height: 170px;
+
+}
+
+.ba-width-3-4 {
+    width: 50%;
+    height: 190px;
+}
+
+.ba-width-4-6 {
+    width: 16.666%;
+    height: 135px;
+}
+
+.ba-color7 {
+    background: #6652AD;
+    line-height: 120px;
+}
+
+.ba-width-4-2 {
+    width: 50%;
+    height: 135px;
+}
+
+.ba-width-4-3 {
+    width: 33.333%;
+    height: 135px;
+}
