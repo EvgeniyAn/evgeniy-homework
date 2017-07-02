@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+}
+body{
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #262626;
+}
+
+.header{
+    background: #f9f8fb url("images/header-bg.jpg") 50% no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo{
+    /*background: #000 url("images/logo.svg") no-repeat;*/
+}

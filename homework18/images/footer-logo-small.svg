@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="64" height="27" viewBox="0 0 64 27">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 25px;
+      }
+
+      .cls-2 {
+        fill: #b9b9b9;
+        text-anchor: end;
+        font-family: "Pacifico";
+      }
+    </style>
+  </defs>
+  <text x="60" y="24" class="cls-1"><tspan x="60" class="cls-2">Cahee</tspan></text>
+</svg>
