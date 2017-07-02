@@ -243,7 +243,7 @@ a{
     background-color: #7beec7;
     color: #fff;
 }
-.skills :first-child i{
+.row:first-child .skill:first-child i {
     padding: 0 7%;
 }
 
