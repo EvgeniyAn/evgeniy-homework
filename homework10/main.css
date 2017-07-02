@@ -51,6 +51,9 @@
     top: 10%;
     border-radius: 50%;
 }
+
+/*.squares .row:nth-child(n+6) div:after,*/
+/*.squares .row:nth-child(-n+3) div:after*/
 .circle-gray{
     background: #512222;
 
