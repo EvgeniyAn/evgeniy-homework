@@ -29,7 +29,8 @@ body{
 .card-main{
     background: url("../images/Image1.png") no-repeat;
     /*max-width: 740px;*/
-    min-width: 740px;
+    /*min-width: 740px;*/
+    width: 65%;
     max-height: 540px;
     position: relative;
 
