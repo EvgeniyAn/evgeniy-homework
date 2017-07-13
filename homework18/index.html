@@ -64,15 +64,11 @@
 				
 				<div class="about-text">
 					<h1 class="about-text__header">About Us</h1>
-					<p class="about-text__description">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis
-						nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-						in
-						reprehenderit in voluptate velit esse cillum.</p>
+					<p class="about-text__description">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+						in reprehenderit in voluptate velit esse cillum.</p>
 					<p class="about-text__description">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus
 						error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-						ab
-						illo inventore.</p>
+						ab illo inventore.</p>
 				</div>
 			</div>
 		
@@ -174,28 +170,93 @@
 		</section>
 		<section id="subscribe">
 			<div class="wrapper">
-				<span>Subscribe To Us</span>
-				<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				<span class="subscribe__text">Subscribe To Us</span>
+				<p class="subscribe__description">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore
 					magna aliqua. Ut enim ad minim veniam.</p>
-				<form action="">
-					<input type="email" placeholder="Your email address...">
-					<input type="submit" name="subscribe" value="subscribe">
+				<form class="subscribe-frm" action="">
+					<input class="subscribe-frm__email" type="email" placeholder="Your email address...">
+					<input class="subscribe-frm__submit" type="submit" name="subscribe" value="subscribe">
 				</form>
 			</div>
 		</section>
 		<section id="blog">
 			<div class="wrapper">
-			
+				<h1 class="blog__text">Blog</h1>
+				<p class="blog__description">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit.</p>
+				<div class="blog-container">
+					<div class="blog-gallery blog-gallery--img1">
+						<p class="blog-gallery__date">20 <span>nov</span></p>
+						<p class="blog-gallery__description">Green Smoothies: Too Much of a Good Thing?</p>
+						<p class="blog-gallery__author">By Auskteez - 2 hours ago</p>
+					</div>
+					
+					<div class="blog-gallery blog-gallery--img2">
+						<p class="blog-gallery__date">14 <span>nov</span></p>
+						<p class="blog-gallery__description">Growing Food and a “Thirst” for Innovation</p>
+						<p class="blog-gallery__author">By Auskteez - 3 hours ago</p>
+					</div>
+					<div class="blog-gallery blog-gallery--img3">
+						<p class="blog-gallery__date">10 <span>nov</span></p>
+						<p class="blog-gallery__description">Pesticides & Food: What You Need to Know</p>
+						<p class="blog-gallery__author">By Auskteez - 6 hours ago</p>
+					</div>
+				</div>
+				<a class="blog__linkview" href="javascript:void(0)">VIEW MORE</a>
 			</div>
 		</section>
 		<section id="contact">
 			<div class="wrapper">
-			
+				<h1 class="contact__header">Contact</h1>
+				<p class="contact__description">For new projects, ideas, business or anything you'd like to discuss,
+					contact with me!</p>
+				<div class="contact-container">
+					<form class="contact-frm" action="">
+						<input class="contact-frm__input" type="text" name="fio" placeholder="FIO">
+						<input class="contact-frm__input" type="email" name="email" placeholder="Your email...">
+						<input class="contact-frm__input" type="tel" name="phone" placeholder="Your phone number...">
+						<textarea class="contact-frm__input" name="message" id="" cols="30" rows="10"
+						          placeholder="Your messge..."></textarea>
+					</form>
+					<div class="contact-main">
+						<p class="contact-main__header">ADDRESS</p>
+						<p class="contact-main__text">123 City name, Street, City, Country</p>
+						<p class="contact-main__header">EMAIL</p>
+						<p class="contact-main__text">cahee@domain.com</p>
+						<p class="contact-main__header">PHONE</p>
+						<p class="contact-main__text">+012 345 6789</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
-	
+	<footer id="footer">
+		<p class="footer__company">© 2015 Company. All right reserved.</p>
+		<div class="footer-logo">
+			<a class="footer-logo__link" href="javascript:void(0)">
+				<svg width="130" height="52" viewBox="0 0 127 52">
+					<defs>
+						<style>
+							.cls-1, .cls-2 {
+								font-size: 50px;
+							}
+							
+							.cls-2 {
+								fill: #262626;
+								text-anchor: end;
+								font-family: 'Pacifico', cursive;
+							}
+						</style>
+					</defs>
+					<text x="119" y="47" class="cls-1">
+						<tspan x="119" class="cls-2">Cahee</tspan>
+					</text>
+				</svg>
+			</a>
+		</div>
+		<p class="footer__author">Made with <span>love</span> by Auskteez</p>
 	</footer>
 
 </body>
