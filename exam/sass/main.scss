@@ -1,0 +1,485 @@
+@import "normalize.css";
+
+$menuText: #fffefe;
+$sectionText: #222222;
+$formText: #676767;
+$hover: #ff6033;
+
+$fontFamilyLato: 'Lato', sans-serif;
+$fontFamilyRaleway: 'Raleway', sans-serif;
+
+@mixin transition($property, $time, $type) {
+  -webkit-transition: $property $time $type;
+  -moz-transition: $property $time $type;
+  -o-transition: $property $time $type;
+  transition: $property $time $type;
+}
+
+@mixin transition2($property, $time, $type,$property1, $time1, $type1) {
+  -webkit-transition: $property $time $type, $property1 $time1 $type1;
+  -moz-transition: $property $time $type, $property1 $time1 $type1;
+  -o-transition: $property $time $type, $property1 $time1 $type1;
+  transition: $property $time $type, $property1 $time1 $type1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  background: #02496a url("../image/bg-header.jpg") center no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $menuText;
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 25px;
+  }
+
+  &-logo {
+    width: 100%;
+    max-width: 109px;
+    height: 18px;
+    background: url("../image/Logo.png") center no-repeat;
+    background-size: cover;
+  }
+  &-nav {
+
+    &__menu {
+      display: inline-block;
+      text-transform: uppercase;
+      color: $menuText;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: $fontFamilyLato;
+      line-height: 2.7;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      border: 2px solid transparent;
+      letter-spacing: 0.025em;
+      margin: 0 25px;
+      @include transition(border-top-color, 0.5s, ease-out);
+
+      &:hover {
+        border-top-color: $hover;
+      }
+
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    font-family: $fontFamilyRaleway;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__line {
+    width: 85px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 40px;
+  }
+  &__description {
+    max-width: 600px;
+    color: $menuText;
+    font-family: $fontFamilyLato;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: .05em;
+    margin: 0 auto 7%;
+    text-align: center;
+  }
+  &__arrow {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 92px;
+
+    & a svg{
+      @include transition(transform, 0.5s, ease-in-out);
+    }
+
+
+    &:hover .header__arrow_cls-1 {
+      fill: $hover;
+      opacity: 1;
+    }
+    &:hover a svg{
+      //transform: rotate(360deg);
+      transform: translateY(10px);
+    }
+  }
+}
+
+.services {
+  padding: 115px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fontFamilyRaleway;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.71;
+    color: $sectionText;
+    margin: 0 0 70px;
+  }
+  &__line {
+    width: 86px;
+    border: none;
+    border-bottom: 2px solid $sectionText;
+    margin-bottom: 80px;
+  }
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 342px;
+    justify-content: space-between;
+  }
+
+  .service {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+
+    &-img {
+      min-height: 150px;
+
+      &__svg {
+
+      }
+    }
+
+    &__text {
+      font-family: $fontFamilyLato;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: .01em;
+      color: $sectionText;
+    }
+    &__description {
+      font-family: $fontFamilyLato;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.88;
+      color: $sectionText;
+    }
+
+  }
+}
+
+.about {
+  background: #242424 url("../image/section3-bg.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 165px 0 115px;
+    background: url("../image/phone.png") no-repeat 80% 100%;
+  }
+
+  &__header {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 45px;
+    font-family: $fontFamilyLato;
+    font-weight: normal;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+  &__description {
+    width: 100%;
+    max-width: 520px;
+    font-family: $fontFamilyLato;
+    font-weight: lighter;
+    font-size: 22px;
+    line-height: 1.27;
+    color: #ffffff;
+  }
+  &__link {
+    font-family: $fontFamilyLato;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #ffffff;
+    text-decoration: underline;
+    @include transition(color, 0.5s, ease-out);
+
+    &:hover {
+      color: $hover;
+    }
+  }
+}
+
+.our-work {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 115px 0 80px;
+  background: #ffffff;
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fontFamilyRaleway;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.71;
+    color: $sectionText;
+    margin: 0 0 70px;
+  }
+  &__line {
+    width: 86px;
+    border: none;
+    border-bottom: 2px solid $sectionText;
+    margin-bottom: 80px;
+  }
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 371px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .work {
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 75px;
+
+    &--image1 {
+      background: transparent url("../image/our_work_img1.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &--image2 {
+      background: transparent url("../image/our_work_img2.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &--image3 {
+      background: transparent url("../image/our_work_img3.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    &-content {
+      background: rgba(64, 64, 64, 1);
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 155px 0 135px;
+      text-align: center;
+      visibility: hidden;
+      //@include transition2(visibility, 0.5s, ease-in-out, background-color, 0.5s, ease-in-out);
+      @include transition(background-color, .6s, ease-in);
+
+      &__text {
+        text-transform: uppercase;
+        font-family: $fontFamilyLato;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 2.73;
+        color: #fffefe;
+
+      }
+      &__link {
+        &:hover .our_work_cls-1 {
+          fill: $hover;
+        }
+      }
+    }
+
+    &:hover .work-content {
+      visibility: visible;
+      background: rgba(64, 64, 64, .65);
+    }
+
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    text-transform: uppercase;
+    background: transparent;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 2px solid $sectionText;
+    font-family: $fontFamilyLato;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2.5;
+    color: $sectionText;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    padding: 0 150px;
+    @include transition2(border-color, 0.5s, ease-out, color, 0.5s, ease-out);
+
+    &:hover {
+      border-color: $hover;
+      color: $hover;
+    }
+  }
+}
+
+.contact {
+  background: #131b1e url("../image/last-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 115px 0 120px;
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fontFamilyRaleway;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.71;
+    color: #ffffff;
+    margin: 0 0 70px;
+  }
+  &__line {
+    width: 86px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 80px;
+  }
+  &-social {
+    text-align: center;
+    margin-bottom: 75px;
+
+    &__icon {
+      margin: 0 15px;
+      & svg {
+        width: 25px;
+        height: 25px;
+
+        @include transition(transform, 0.5s, ease-in-out);
+
+      }
+      &:hover .contact-social_cls-1 {
+        fill: $hover;
+      }
+      &:hover svg {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+
+    }
+  }
+
+  &-form {
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__input {
+      display: inline-block;
+      outline: none;
+      border: none;
+      width: 46%;
+      border-bottom: 2px solid #afafaf;
+      font-family: $fontFamilyLato;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 2.22;
+      color: $formText;
+      font-style: italic;
+      background: transparent;
+      padding-left: 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      @include transition(border-bottom-color, .5s, ease-out);
+
+      &:focus {
+        border-bottom-color: $hover;
+      }
+
+      &--fullwidth {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+    &__btn {
+      margin: 0 auto;
+      border: 2px solid #ffffff;
+      background: transparent;
+      text-transform: uppercase;
+      font-family: $fontFamilyLato;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 2.5;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0 55px;
+
+      @include transition2(border-color, 0.5s, ease-out, color, 0.5s, ease-out);
+
+      &:hover {
+        border-color: $hover;
+        color: $hover;
+      }
+    }
+  }
+
+}
