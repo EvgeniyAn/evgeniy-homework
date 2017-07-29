@@ -1,4 +1,4 @@
-function Summ () {
+function Summ() {
     var num1 = document.getElementById('numb1').value;
     var num2 = document.getElementById('numb2').value;
     var result = document.getElementsByClassName('result')[0];
@@ -8,21 +8,48 @@ function Summ () {
 };
 
 function Login() {
-    var login = prompt('Кто пришел? (введите \"Отмена\" для отмены)'),
-    password = null;
-    if(login === 'Отмена'){
-        alert('Вход отменен!');
-    } else if(login === 'Админ'){
-        password = prompt('Пароль?');
 
-        if(password === 'Отмена'){
+    /*    var login = prompt('Кто пришел? (введите \"Отмена\" для отмены)'),
+            password = null;
+
+        if (login === 'Отмена') {
             alert('Вход отменен!');
-        } else if(password === 'Черный Властелин'){
-            alert('Добро пожаловать!');
+        } else if (login === 'Админ') {
+            password = prompt('Пароль?');
+
+            if (password === 'Отмена') {
+                alert('Вход отменен!');
+            } else if (password === 'Черный Властелин') {
+                alert('Добро пожаловать!');
+                break;
+            } else {
+                alert('Пароль не верен!');
+            }
         } else {
-            alert('Пароль не верен!');
+            alert('Я вас не знаю!');
+        }*/
+
+    do {
+        var login = prompt('Кто пришел? (введите \"Отмена\" для отмены)'),
+            password = null;
+
+        if (login === 'Отмена') {
+            alert('Вход отменен!');
+        } else if (login === 'Админ') {
+            password = prompt('Пароль?');
+            if (password === 'Отмена') {
+                alert('Вход отменен!');
+            } else if (password === 'Черный Властелин') {
+                alert('Добро пожаловать!');
+                break;
+            } else {
+                alert('Пароль не верен!');
+            }
+        } else {
+            alert('Я вас не знаю!');
         }
-    } else {
-        alert('Я вас не знаю!');
-    }
+
+    } while (login !== 'Отмена');
+
+
 };
