@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 2 - JavaScript</title>
+	<style>
+		input[name*=number] {
+			font-size: 25px;
+			font-weight: bold;
+			padding: 10px;
+		}
+		
+		.btn {
+			font-size: 25px;
+			border: 2px solid black;
+			background: darkslateblue;
+			color: #ffffff;
+			padding: 10px;
+			cursor: pointer;
+		}
+		
+		.btn:hover {
+			background: #7374C1;
+			
+		}
+		
+		span {
+			font-size: 30px;
+			margin: 10px;
+		}
+		
+		p {
+			font-size: 25px;
+			font-weight: bold;
+			text-align: left;
+		}
+		
+		.wrapper {
+			width: 98%;
+			max-width: 1024px;
+			margin: 0 auto;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<h1>Сложение 2-х чисел</h1>
+		<input id="numb1" type="text" name="number1">
+		<span class="plus">+</span>
+		<input id="numb2" type="text" name="number2">
+		<button onclick="Summ()" class="btn">Рассчитать</button>
+		<p class="result">Результат:</p>
+	</div>
+	<hr>
+	<div class="wrapper">
+		<button class="btn" onclick="Login()">Логин</button>
+	</div>
+	<script src="core.js" async></script>
+</body>
+</html>
