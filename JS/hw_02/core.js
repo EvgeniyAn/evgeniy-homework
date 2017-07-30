@@ -33,17 +33,20 @@ function Login() {
         var login = prompt('Кто пришел? (введите \"Отмена\" для отмены)'),
             password = null;
 
-        if (login === 'Отмена') {
+        if (login === 'Отмена' || login === null) {
             alert('Вход отменен!');
+            break;
         } else if (login === 'Админ') {
             password = prompt('Пароль?');
-            if (password === 'Отмена') {
+            if (password === 'Отмена' || login === null) {
                 alert('Вход отменен!');
-            } else if (password === 'Черный Властелин') {
+                break;
+            } else if (password === 'Черный Властелин' || password === 'Чёрный Властелин') {
                 alert('Добро пожаловать!');
                 break;
             } else {
-                alert('Пароль не верен!');
+                break;
+                // alert('Пароль не верен!');
             }
         } else {
             alert('Я вас не знаю!');
