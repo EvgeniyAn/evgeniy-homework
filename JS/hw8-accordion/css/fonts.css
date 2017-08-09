@@ -1,0 +1,8 @@
+﻿/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+    font-family: "JF Flat";
+    src: url("../fonts/JF-Flat-regular.eot") format("eot"), url("../fonts/JF-Flat-regular.woff") format("woff"),
+    url("../fonts/JF-Flat-regular.ttf") format("truetype"), url("../fonts/JF-Flat-regular.svg#JF Flat") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

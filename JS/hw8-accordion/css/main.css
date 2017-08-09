@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 35px 0;
+    background: #f6704b;
+}
+
+.wrapper {
+    width: 98%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.section {
+    font-family: "JF Flat", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffe9c1;
+}
+
+.section__header {
+    font-size: 24px;
+    line-height: 1;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.section__header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 50px;
+    background-size: cover;
+}
+
+.section__description {
+    line-height: 1.61;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 2px solid #c5a864;*/
+    border: 2px solid rgba(208,177,105, .4);
+    padding: 16px 12px;
+
+    display: none;
+}
+
+.section--location {
+    background: #620808;
+    color: #ffe9c1;
+}
+
+.section--location .section__header:before {
+    background: url('../images/Location Pin.png') 50% no-repeat;
+}
+
+.section--music {
+    background: #a53f3f;
+    color: #f4ce74;
+}
+
+.section--music .section__header:before {
+    background: url('../images/Headphones.png') 50% no-repeat;
+}
+
+.section--notes {
+    background: #f4ce74;
+    color: #620808;
+}
+
+.section--notes .section__header:before {
+    background: url('../images/Lightbulb.png') 50% no-repeat;
+}
+
+.section--books {
+    background: #ffe9c1;
+    color: #a53f3f;
+}
+
+.section--books .section__header:before {
+    background: url('../images/Bookmarks.png') 50% no-repeat;
+}
+
+.section--tendances {
+    background: #d5441c;
+    color: #ffe9c1;
+}
+
+.section--tendances .section__header:before {
+    background: url('../images/Lightning-Bolt.png') 50% no-repeat;
+}
+
+.active{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
