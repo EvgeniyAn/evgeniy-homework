@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 11 - Google MAps</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!--<div class="map1">-->
+    <!--<h1>Подключение через iframe</h1>-->
+    <!--<div class="container-map1">-->
+    <!--<iframe id="map-1"-->
+    <!--src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d658.037160488457!2d37.536234205842604!3d48.7217513656088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502686583758"-->
+    <!--width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+    <!--</div>-->
+    <!--</div>-->
+    <h1>Подключение через API</h1>
+
+    <div class="cities">
+        <h3>Выберите город</h3>
+        <label><input type="radio" name="radio" value="Полтава">Полтава</label> <!--49.5687001,34.5835126-->
+        <label><input type="radio" name="radio" value="Киев">Киев</label> <!--46.4782251,30.721044-->
+        <label><input type="radio" name="radio" value="Одесса">Одесса</label> <!--50.449189,30.5144833-->
+    </div>
+
+    <div class="routing">
+
+    </div>
+
+
+    <div id="map-2" class="map-2">
+
+        <!--<div class="map-window-info">-->
+        <!--<h3>Beetroot Academy</h3>-->
+        <!--<p>Address</p>-->
+        <!--</div>-->
+
+    </div>
+
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3cB3EmtOTnDgpGJyhxBZ0AQ24VhPrjiU&callback=initMap" async defer></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3cB3EmtOTnDgpGJyhxBZ0AQ24VhPrjiU&language=ru&libraries=places"
+            async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="core.js"></script>
+</body>
+</html>

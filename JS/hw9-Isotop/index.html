@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 9 - Isotope</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Isotop and image grid</h1>
+
+        <nav id="sort">
+            <h3>Sort</h3>
+            <ul>
+                <li class="category"><a href="javascript:void(0)">CategoryAsc</a></li>
+                <li class="category2"><a href="javascript:void(0)">CategoryDesc</a></li>
+                <li class="color-sort"><a href="javascript:void(0)">Color</a></li>
+            </ul>
+        </nav>
+        <nav id="filter">
+            <h3>Filter</h3>
+            <ul>
+                <li class="all"><a href="javascript:void(0)">Show All</a></li>
+                <li class="category"><a href="javascript:void(0)">Category short</a></li>
+                <li class="color-sort"><a href="javascript:void(0)">Color4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+
+        <div class="grid">
+            <div class="grid-item grid-item--width3 grid-item--height color" data-category="
+lengthy">600x150</div>
+            <div class="grid-item grid-item--width3 grid-item--height color1" data-category="
+lengthy">600x150</div>
+            <div class="grid-item grid-item--width3 grid-item--height1 color2" data-category="
+lengthy">600x320</div>
+            <div class="grid-item grid-sizer grid-item--height2 color3" data-category="short">200x165</div>
+            <div class="grid-item grid-item--height2 color3" data-category="short">200x165</div>
+            <div class="grid-item grid-item--height2 color3" data-category="short">200x165</div>
+            <div class="grid-item grid-item--width1 grid-item--height color4" data-category="longer">300x150</div>
+            <div class="grid-item grid-item--width1 grid-item--height color4" data-category="longer">300x150</div>
+            <div class="grid-item grid-item--width2 grid-item--height3 color5" data-category="longer">400x185</div>
+            <div class="grid-item grid-item--width2 grid-item--height3 color5" data-category="longer">400x185</div>
+            <div class="grid-item grid-item--height4 color5" data-category="short">200x195</div>
+            <div class="grid-item grid-item--height4 color5" data-category="short">200x195</div>
+            <div class="grid-item grid-item--height5 color6" data-category="short">200x145</div>
+            <div class="grid-item grid-item--width3 grid-item--height6 color6" data-category="
+lengthy">600x135</div>
+            <div class="grid-item grid-item--width2 grid-item--height6 color6" data-category="longer">400x135</div>
+        </div>
+
+
+    </main>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="core.js"></script>
+</body>
+</html>

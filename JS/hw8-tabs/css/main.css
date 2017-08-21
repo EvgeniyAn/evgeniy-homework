@@ -74,7 +74,7 @@ a {
     box-sizing: border-box;
     max-width: 600px;
     margin: 0 auto;
-    transform: translateY(15vh);
+    transform: translateY(250px);
 }
 
 .card-tabs {
