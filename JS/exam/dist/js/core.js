@@ -18,7 +18,7 @@
         }
     });
     $('#portfolio .filters').on('click', function (e) {
-        var target = e.target.outerText;
+        var target = e.target.innerText;
 
         $(e.target)
             .addClass('filter__item--active')
